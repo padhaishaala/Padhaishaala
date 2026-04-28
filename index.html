@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Padhaishaala - not your typical shaala</title>
+  
+   <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+</head>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f8faff;
+      color: #222;
+    }
+
+    /* HEADER */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background: #fff;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+    }
+
+    .logo-section h1 {
+      color: black;
+      font-size: 28px;
+    }
+
+.tagline {
+  font-size: 22px;
+  font-weight: 700;
+  color: #000;
+  margin-top: 6px;
+  letter-spacing: 0.8px;
+  text-transform: capitalize;  /* 👈 THIS LINE */
+}
+
+    .btn-dark {
+      background: black;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+    }
+
+    /* HERO */
+    .hero {
+      padding: 80px 50px;
+    }
+
+    
+    .hero h2 {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      color: #555;
+      margin-bottom: 25px;
+      max-width: 500px;
+    }
+
+    .button-group {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+
+    .btn {
+      background: #3b5bdb;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 25px;
+      text-decoration: none;
+    }
+
+    .playstore-img {
+      height: 45px;
+    }
+
+    /* FEATURES */
+    .features {
+      padding: 70px 50px;
+      text-align: center;
+    }
+
+    .feature-cards {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      width: 260px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    }
+
+    /* TESTIMONIALS */
+    .testimonials {
+      padding: 70px 50px;
+      background: #eef2ff;
+      text-align: center;
+    }
+
+    .testimonial {
+      margin: 20px auto;
+      max-width: 600px;
+      font-style: italic;
+    }
+
+    /* CONTACT FORM */
+    .contact {
+      padding: 80px 50px;
+      text-align: center;
+    }
+
+    input, textarea {
+      padding: 12px;
+      width: 250px;
+      margin: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    textarea {
+      width: 300px;
+      height: 120px;
+    }
+
+    button {
+      background: black;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 25px;
+      border: none;
+      cursor: pointer;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: black;
+      color: white;
+    }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+      .feature-cards {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .button-group {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="logo-section">
+    <h1>Padhaishaala</h1>
+    <p class="tagline">Not Your Typical Shaala</p>
+  </div>
+
+<button id="theme-toggle" class="toggle-btn">Toggle</button>
+    
+  </a>
+</header>
+
+<!-- HERO -->
+<section class="hero reveal">
+ <div class="hero-row">
+
+  <div class="left">
+    <h1 class="section-heading">Learning That Actually Feels Natural</h1>
+    <p>
+      Padhaishaala adapts to every student from Grade 1 to 10 with clear,
+      age-appropriate explanations, multiple ways to understand concepts,
+      instant doubt solving, and gentle study consistency support. 
+    </p>
+  </div>
+
+  <div class="right">
+    <h2 class="section-heading">Why Padhaishaala?</h2>
+    <p>
+      Unlike typical learning platforms, Padhaishaala adapts to each student’s
+      level, offering clear explanations, multiple ways to understand concepts,
+      and a supportive learning experience without pressure.
+      
+      <p class="hero-desc">
+Built for students who want to actually understand, not just memorize.
+</p>
+    
+    </p>
+  </div>
+
+  <div class="waitlist">
+  <a href="https://forms.gle/X3SEdZWRn6h8Wg5D9" target="_blank" class="btn">
+    Join Waitlist
+  </a>
+</div>
+
+<p class="waitlist-note">
+  Be the first to experience Padhaishaala.
+</p>
+
+<!-- FEATURES -->
+<section class="features reveal">
+  <h2>Why Padhaishaala Works</h2>
+
+  <div class="feature-cards">
+    <div class="card">
+      <h3>Adaptive Learning</h3>
+      <p>Content adjusts based on student level.</p>
+    </div>
+
+    <div class="card">
+      <h3>Friendly Guidance</h3>
+      <p>Feels like a personal study companion.</p>
+    </div>
+
+    <div class="card">
+      <h3>Consistent Learning</h3>
+      <p>Gentle reminders to stay on track.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials-section reveal fade-in">
+
+  <h2 class="section-heading">Loved by Students & Parents</h2>
+  <p class="sub-text">Real feedback from learners using Padhaishaala.</p>
+
+  <div class="testimonial-container">
+
+    <div class="testimonial-card">
+      <div class="stars">★★★★★</div>
+      <p>
+        “I used to struggle with understanding concepts, but this app explains things so simply. Studying finally feels easy.”
+      </p>
+      <div class="user">
+        <strong>Aarav K</strong>
+        <span>Grade 9 Student</span>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="stars">★★★★</div>
+      <p>
+        “My daughter studies regularly now without me forcing her. The reminders and explanations really help.”
+      </p>
+      <div class="user">
+        <strong>Neha R</strong>
+        <span>Parent</span>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="stars">★★★★</div>
+      <p>
+        “The way it explains topics in different styles is amazing. I finally understand math instead of memorizing it.”
+      </p>
+      <div class="user">
+        <strong>Rahul S</strong>
+        <span>Grade 10 Student</span>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ===== FOUNDERS + STORY WRAPPER ===== -->
+<section class="about-wrapper reveal fade-in">
+
+  <!-- LEFT: FOUNDERS -->
+  <div class="founders-block">
+    <h2>Meet the Team Behind Padhaishaala</h2>
+
+    <div class="founder-container">
+
+      <div class="founder">
+        <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png">
+        <h3>Tanuj Sharma P</h3>
+        <p>Founder</p>
+        <a href="https://www.linkedin.com/in/tanuj-p-7008993a0/" target="_blank" class="linkedin-icon">in</a>
+      </div>
+
+      <div class="founder">
+        <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png">
+        <h3>R K Purvansh</h3>
+        <p>Founder</p>
+        <a href="https://www.linkedin.com/in/purvansh-r-k-58362a399/" target="_blank" class="linkedin-icon">in</a>
+      </div>
+
+      <div class="founder">
+        <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png">
+        <h3>Myarrah S E</h3>
+        <p>Co-Founder</p>
+        <a href="https://www.linkedin.com/in/myarrah-ekbote-323830405/" target="_blank" class="linkedin-icon">in</a>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- RIGHT: STORY -->
+  <div class="story-block">
+    <h2 class="section-heading">Our Origin Story</h2>
+
+    <p class="story-text">
+      As 10th grade students, we noticed a common problem — almost every student has doubts, 
+      but not everyone feels comfortable asking them.
+      <br><br>
+      Even when teachers explain concepts, many students still struggle to fully understand. 
+      Some hesitate to ask again, while others feel shy or awkward speaking up in front of the class.
+      <br><br>
+      Having experienced this ourselves, we wanted to go beyond textbooks and traditional learning methods.
+      <br><br>
+      That’s how <strong>Padhaishaala</strong> was built — to create a space where students can learn freely, 
+      ask without hesitation, and truly understand concepts in a way that works for them.
+    </p>
+  </div>
+
+</section>
+
+
+<!-- ===== AWARDS ===== -->
+<section class="awards-section reveal">
+  <h2>Awards & Recognition</h2>
+  <p class="sub-text">Milestones we’ve genuinely earned along the way.</p>
+
+  <div class="award-container">
+
+    <div class="award-card">
+      <h3><span class="award-icon">★</span> School Youth Ideathon 2025</h3>
+      <p>
+        Selected among the <strong>Top 500 teams out of 120,000+</strong> participants nationwide.
+        Recognized and awarded at <strong>IIT Delhi</strong> on January 18.
+      </p>
+    </div>
+
+    <div class="award-card">
+      <h3><span class="award-icon">★</span> Finding Maverick – Samvay, IIM Bangalore</h3>
+      <p>
+        Secured <strong>3rd place</strong> at the Finding Maverick competition during 
+        <strong>Samvay at IIM Bangalore</strong>.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ===== VISION ===== -->
+<section class="vision-section reveal">
+
+  <h2 class="section-heading">Our Vision</h2>
+
+  <p class="vision-text">
+    By 2035, we envision Padhaishaala reaching millions of students across India, becoming a natural part of everyday learning. 
+    Education should not be a privilege—it should be engaging, personalized, and accessible to every student.
+  </p>
+
+  <div class="vision-quote">
+    Every learner deserves the tools to understand better, grow faster, and succeed with confidence. 
+    We're building Padhaishaala to make that a reality.
+  </div>
+
+  <span class="blob b1"></span>
+  <span class="blob b2"></span>
+  <span class="blob b3"></span>
+
+</section>
+
+<!-- CONTACT FORM -->
+<section class="contact">
+  <h2>Facing Any Problems?</h2>
+  <p>We’re here to help you</p>
+
+  <form action="https://formsubmit.co/padhaishaala1709@gmail.com" method="POST">
+
+    <input type="hidden" name="_subject" value="New Problem from Padhaishaala Website">
+
+    <input type="email" name="email" placeholder="Your Email" required>
+    <br>
+
+    <textarea name="message" placeholder="Your Problem" required></textarea>
+    <br>
+
+    <button type="submit">Submit</button>
+
+  </form>
+</section>
+
+<!-- FOOTER (LAST) -->
+  
+<footer>
+  <div class="footer-box">
+
+    <!-- LEFT: SOCIALS -->
+    <div class="footer-left">
+      <p class="social-title">SOCIALS</p>
+
+      <div class="social-icons">
+        <a href="https://www.instagram.com/padhaishaala.official/" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+        </a>
+
+        <a href="https://www.youtube.com/@PADHAISHAALA1411" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
+        </a>
+      </div>
+    </div>
+
+    <!-- CENTER -->
+    <div class="footer-center">
+      <p>© Padhaishaala. All rights reserved.</p>
+
+      <a href="#" onclick="alert('App launching soon!')">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg">
+      </a>
+      
+    </div>
+    
+    <a href="https://codepen.io/PADHAI-SHAALA/full/PwbYxjx" target="_blank" class="footer-link">
+    Privacy Policy
+  </a>
+
+  </div>
+
+</footer>
+
+ 
+  
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
